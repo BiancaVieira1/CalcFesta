@@ -14,30 +14,29 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Text style={styles.titulo}> 🎁 Calcular Suprimentos para Festa 🎁</Text>
-      <br></br>
+      
       <Image
         style={styles.logo}
         source={{
           uri: 'https://cdn-icons-png.flaticon.com/512/1997/1997683.png',
         }}
       />
-      <br></br>
+      
       <Text style={styles.titulo}>Digite o Número de Pessoas:</Text>
-      <br></br>
+      
       <TextInput 
             style={styles.input}
             keyboardType="numeric"
             value={qtConvidados}
             onChangeText={(texto)=>setQtConvidados(texto)}
           />
-          <br></br>
+         
           <Refrigerante qtConvidados={qtConvidados} style={styles.coisas}/>
           <Agua qtConvidados={qtConvidados} style={styles.coisas}/>
           <Bolo qtConvidados={qtConvidados} style={styles.coisas}/>
           <Doce qtConvidados={qtConvidados} style={styles.coisas}/>
           <Salgado qtConvidados={qtConvidados} style={styles.coisas}/>
-          <br></br>
-          <br></br> 
+          
           <Text style={styles.eu}> ©BiaVieira</Text>   
            </View>
      
@@ -48,7 +47,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#FFB6C1',
+    backgroundColor: '#FFF0F5',
     alignItems: 'center',
     justifyContent: 'center',
     borderColor: '#fff'
